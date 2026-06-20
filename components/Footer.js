@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#08090f', color: '#94a3b8', padding: '60px 0 32px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+    <footer style={{ background: '#0f172a', color: '#94a3b8', padding: '60px 0 32px' }}>
       <div style={{ maxWidth: 1120, margin: '0 auto', padding: '0 24px' }}>
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 mb-12">
 
@@ -10,19 +10,19 @@ export default function Footer() {
           <div>
             <a href="#" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
               <div style={{
-                width: 36, height: 36, background: 'linear-gradient(135deg, #3a56e8 0%, #00e5ff 100%)', borderRadius: 10,
+                width: 36, height: 36, background: 'linear-gradient(135deg, #0ea5e9 0%, #10b981 100%)', borderRadius: 10,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 0 12px rgba(58, 86, 232, 0.4)',
+                boxShadow: '0 2px 8px rgba(14, 165, 233, 0.3)',
               }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
                 </svg>
               </div>
               <span className="font-display" style={{ fontWeight: 700, fontSize: 18, color: 'white', letterSpacing: '-0.02em' }}>
-                Dev<span style={{ color: '#00e5ff' }}>Studio</span>
+                Dev<span style={{ color: '#0ea5e9' }}>Studio</span>
               </span>
             </a>
-            <p style={{ fontSize: 15, color: '#64748b', lineHeight: 1.75, maxWidth: 320, marginBottom: 24 }}>
+            <p style={{ fontSize: 15, color: '#94a3b8', lineHeight: 1.75, maxWidth: 320, marginBottom: 24 }}>
               Jasa pembuatan website & aplikasi custom profesional untuk semua jenis bisnis. Mulai dari Rp 200.000.
             </p>
             <a href="https://wa.me/6281376524303" target="_blank" rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="font-display" style={{ fontWeight: 600, fontSize: 14, color: 'white', marginBottom: 20, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Layanan</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
               {['Website & Profil Digital', 'Sistem Informasi', 'Web Application', 'Aplikasi Mobile', 'Maintenance'].map(l => (
-                <li key={l}><a href="#layanan" style={{ color: '#64748b', fontSize: 14, textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.target.style.color = '#00e5ff'} onMouseLeave={e => e.target.style.color = '#64748b'}>{l}</a></li>
+                <li key={l}><a href="#layanan" style={{ color: '#94a3b8', fontSize: 14, textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.target.style.color = '#0ea5e9'} onMouseLeave={e => e.target.style.color = '#94a3b8'}>{l}</a></li>
               ))}
             </ul>
           </div>
@@ -48,17 +48,16 @@ export default function Footer() {
             <p className="font-display" style={{ fontWeight: 600, fontSize: 14, color: 'white', marginBottom: 20, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Perusahaan</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
               {['Tentang Kami', 'Portofolio', 'Testimoni', 'Blog', 'Kontak'].map(l => (
-                <li key={l}><a href={`#${l.toLowerCase()}`} style={{ color: '#64748b', fontSize: 14, textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.target.style.color = '#00e5ff'} onMouseLeave={e => e.target.style.color = '#64748b'}>{l}</a></li>
+                <li key={l}><a href={`#${l.toLowerCase()}`} style={{ color: '#94a3b8', fontSize: 14, textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.target.style.color = '#0ea5e9'} onMouseLeave={e => e.target.style.color = '#94a3b8'}>{l}</a></li>
               ))}
             </ul>
           </div>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 28, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 28, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <p style={{ fontSize: 13, color: '#64748b' }}>
             © {new Date().getFullYear()} DevStudio. Hak cipta dilindungi.
           </p>
-          
         </div>
       </div>
     </footer>
